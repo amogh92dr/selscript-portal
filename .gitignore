@@ -1,2 +1,12 @@
 node_modules
+public/*.js
+public/*.json
+public/*.map
+public/*.html
+public/css/main.css
+public/css/styles.css
+public/css/*.map
 log
+.env
+yarn-error.log
+**/coverage
