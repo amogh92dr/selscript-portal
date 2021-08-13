@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard renders the component correctly 1`] = `
+<div
+  className="card sectionWrapper"
+>
+  <div
+    className="dark-blue mx2 mb2"
+  >
+    Page Title
+  </div>
+  <div
+    className="mx2 mb2 flex"
+  >
+    <div
+      className="mx2 content"
+    >
+      Page Contents
+    </div>
+  </div>
+</div>
+`;

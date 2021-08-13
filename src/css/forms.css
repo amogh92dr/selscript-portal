@@ -1,0 +1,40 @@
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='date'] {
+  position: relative;
+}
+input[type='date']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  background: url('/images/calendar.png') center/14px no-repeat;
+  color: transparent;
+  opacity: 0.333;
+}
+input[type='date']::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+input[type='time']::-webkit-inner-spin-button {
+  margin: -3px -3px 0 0;
+}
+input[type='date']:required:not(:focus),
+input[type='time']:required:not(:focus) {
+  border-color: rgba(0, 0, 0, 0.125) !important;
+}
+input:valid:required:not(:focus),
+select:valid:required:not(:focus) {
+  border-color: var(--green);
+}
+select:not([multiple]) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+button:disabled:hover {
+  cursor: not-allowed;
+}

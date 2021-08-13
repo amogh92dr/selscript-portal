@@ -1,0 +1,1 @@
+/*! Copyright (C) 2021 Catapult Health, LLC. All Rights Reserved. See LICENSE.txt for license */

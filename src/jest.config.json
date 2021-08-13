@@ -1,0 +1,17 @@
+{
+  "testEnvironment": "jsdom",
+  "coverageDirectory": "<rootDir>/tests/coverage",
+  "collectCoverage": true,
+  "coverageReporters": ["text-summary"],
+  "setupFiles": ["<rootDir>/tests/setup.js"],
+  "clearMocks": true,
+  "restoreMocks": true,
+  "moduleNameMapper": {
+    "\\.(css)$": "<rootDir>/tests/styleMock.js",
+    "^app-constants$": "<rootDir>/constants.js",
+    "^components(.*)$": "<rootDir>/components/$1",
+    "^lib(.*)$": "<rootDir>/lib/$1",
+    "^models(.*)$": "<rootDir>/models/$1"
+  },
+  "testURL": "http://localhost"
+}

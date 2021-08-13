@@ -1,0 +1,10 @@
+{
+  "testEnvironment": "node",
+  "coverageDirectory": "<rootDir>/tests/coverage",
+  "collectCoverage": true,
+  "coverageReporters": ["text-summary"],
+  "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"],
+  "clearMocks": true,
+  "restoreMocks": true,
+  "moduleNameMapper": {}
+}

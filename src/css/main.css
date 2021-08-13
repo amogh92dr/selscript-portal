@@ -1,0 +1,102 @@
+@import '@catapulthealth/catapult-css';
+@import '@catapulthealth/catapult-dialog/dist/catapult-dialog.css';
+
+@import './animations.css';
+@import './forms.css';
+@import './shared.css';
+
+body {
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+a {
+  color: #ff4136;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button.link {
+  background: none !important;
+  color: #ff4136;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  cursor: pointer;
+  outline: 0;
+}
+button.link:hover {
+  text-decoration: underline;
+}
+
+.pageWrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.routeWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.sectionWrapper {
+  min-width: 1280px;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 160px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leftCol,
+.rightCol {
+  width: 325px;
+  box-sizing: border-box;
+  align-self: flex-start; /* stops div from growing to match siblings */
+}
+
+.content {
+  flex: 1;
+  word-break: break-all; /* alternative to overflow: hidden */
+}
+
+.cool-blue {
+  color: var(--cool-blue);
+}
+
+.dark-blue {
+  color: var(--dark-blue);
+}
+
+.pastel-red {
+  color: var(--pastel-red);
+}
+
+.soft-green {
+  color: var(--soft-green);
+}
+
+.dark-gray {
+  color: var(--dark-gray);
+}
+
+:root {
+  --cool-blue: #57b1c5;
+  --light-blue: #9fbeee;
+  --dark-blue: #4e5e88;
+  --pastel-orange: #f78800;
+  --pastel-red: #e46358;
+  --dark-gray: #667080;
+  --off-white: #f6f6f6;
+  --soft-green: #68d48a;
+}
