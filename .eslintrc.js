@@ -14,7 +14,10 @@ module.exports = {
       },
     },
   },
+  root: true,
   rules: {
+    'react/jsx-filename-extension': ['off'],
+    strict: ['error', 'global'],
     'class-methods-use-this': ['off'],
     'jsx-a11y/no-autofocus': ['off'],
     'jsx-a11y/click-events-have-key-events': ['off'],
