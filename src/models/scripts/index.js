@@ -1,7 +1,6 @@
 import axios from 'lib/axios';
 import { uiActions } from 'store/ui-slice';
 import { scriptListActions } from 'store/scriptlist-slice';
-import { logger } from '../../../server/lib/logger';
 
 // Redux Thunk - which executes the returned functiuon at a later time
 export const fetchScripts = () => {
@@ -61,7 +60,7 @@ export const sendScriptData = scriptName => {
     };
     fetchList(scriptName)
       .then(() => {
-        logger.info('Executing Test...');
+        console.log('Starting Tests...');
       })
       .catch(error => {
         dispatch(
