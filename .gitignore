@@ -11,3 +11,4 @@ log
 yarn-error.log
 **/coverage
 .vscode
+.DS_Store
