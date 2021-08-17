@@ -10,3 +10,4 @@ log
 .env
 yarn-error.log
 **/coverage
+.vscode

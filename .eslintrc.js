@@ -38,7 +38,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/reducer.js'],
+      files: ['**/reducer.js', 'src/store/*.js'],
       rules: {
         'no-param-reassign': 'off',
         'default-case': 'off',

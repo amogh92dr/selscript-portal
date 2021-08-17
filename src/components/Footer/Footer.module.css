@@ -1,0 +1,12 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #ccc;
+  background-color: #252525;
+}
+
+.copyright {
+  padding: 0.5rem 0;
+}

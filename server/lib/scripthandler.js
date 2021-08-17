@@ -5,7 +5,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 const { logger } = require('./logger');
 const {
-  selscriptPath,
+  SELSCRIPT_PATH,
   MAX_CONCURRENT_SCRIPT,
   MAX_CONCURRENT_SCRIPT_COUNT,
 } = require('../constants');
@@ -13,8 +13,12 @@ const {
 const childProcessArray = [];
 
 const fetchAllRepos = async () => {
-  const files = await fs.promises.readdir(selscriptPath);
-  return files;
+  const files = await fs.promises.readdir(SELSCRIPT_PATH);
+  const regex = new RegExp(
+    '^.*.(py|PY|md|MD|DS_Store|git|gitignore|prettierrc|travis.yml|travis.YML|vscode)$|^.*-api$',
+  );
+  const scriptNameArray = files.filter(val => !val.match(regex));
+  return scriptNameArray;
 };
 
 const checkScriptCompletion = pid => {
@@ -31,8 +35,8 @@ const executeTest = async (scriptName, scriptDetail) => {
   if (childProcessArray.length > MAX_CONCURRENT_SCRIPT_COUNT) return MAX_CONCURRENT_SCRIPT;
   logger.info(scriptDetail);
   const child = spawn(
-    `cd ${path.join(selscriptPath, scriptName)};
-  \\yarn test --datafill --numreg=1 --headless`,
+    `cd ${path.join(SELSCRIPT_PATH, scriptName)};
+  \\yarn test:cbt --datafill --numreg=1`,
     {
       stdio: 'inherit',
       shell: true,

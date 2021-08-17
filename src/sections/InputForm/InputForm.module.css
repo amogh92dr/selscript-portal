@@ -1,0 +1,26 @@
+.introText {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.form {
+  padding-top: 5rem;
+  display: flex;
+}
+.section {
+  padding: 10px;
+  flex: auto;
+  align-content: center;
+  display: block;
+}
+.warningMessage {
+  background-color: #efdfdf;
+  color: #a65a57;
+  border-radius: 5px;
+}
+
+.input {
+  border-color: var(--light-gray);
+  border-radius: 10px;
+  height: 3.5rem !important;
+}

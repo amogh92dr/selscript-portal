@@ -1,7 +1,2 @@
-export const APPLICATION_NAME = 'SeleniumScript-Portalv1';
-
-export const PERMISSIONS = {
-  ACCESS: `${APPLICATION_NAME}:Access`,
-};
-
-export const JWT_LOCAL_STORAGE_NAME = 'seleniumscript-portal-jwt';
+const APPLICATION_NAME = 'Selenium Script Portal';
+export default APPLICATION_NAME;

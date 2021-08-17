@@ -18,7 +18,9 @@
   "dependencies": {
     "@catapulthealth/catapult-css": "^1.2.0",
     "@catapulthealth/catapult-dialog": "^1.3.0",
+    "@catapulthealth/catapult-react-components": "^2.9.0",
     "@catapulthealth/catapult-server-utils": "^1.36.0",
+    "@reduxjs/toolkit": "^1.6.1",
     "axios": "^0.21.1",
     "babel-plugin-react-css-modules": "^5.2.6",
     "connect-history-api-fallback": "^1.6.0",
@@ -30,6 +32,7 @@
     "prop-types": "^15.6.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-transition-group": "^4.3.0",
     "superstruct": "^0.8.2"
